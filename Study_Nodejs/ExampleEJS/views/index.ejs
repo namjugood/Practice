@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <!-- %로 그려진 태그 안에서 자바스크립트로 명령 사용 -->
+   <!-- 변수출력은 title과 같이 사용-->
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+   <!-- %달린 태그를 한번에 이어써도, 각 줄마다 따로 적용해야 함-->
+    <h1><%= title %></h1>
+    <% for (var i=0; i<5; i++) { %>
+    <p>Welcome to <%= title %></p>      
+    <% } %>
+  </body>
+</html>
